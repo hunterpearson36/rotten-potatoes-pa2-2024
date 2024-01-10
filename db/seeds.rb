@@ -30,8 +30,4 @@ more_movies = [
 
 more_movies.each do |movie|
   Movie.create!(movie)
-  if movie.new_record?
-    movie.assign_attributes(movie_data)
-    movie.save!
-  end
 end
